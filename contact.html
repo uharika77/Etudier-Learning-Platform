@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+        body, html {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-size: 4em;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 500px;
+            color: black;
+            text-align: center;
+        }
+
+        header {
+            height: 160px;
+            width: 100%;
+        }
+
+        #form {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 500px;
+            padding-top: 40px;
+            color: black;
+			padding-bottom: 123px;
+        }
+
+        label, input, textarea {
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1em;
+            color: #676767;
+            transition: border 0.5s;
+            border: solid 3px #98d4f3;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            border: solid 3px #77bde0;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+            overflow: auto;
+        }
+
+        input[type="submit"] {
+            background-color: #F90;
+            color: black;
+            height: 50px;
+            cursor: pointer;
+            margin-top: 30px;
+            font-size: 1.29em;
+            font-family: 'Times New Roman', Times, serif;
+            transition: background-color 0.5s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e58f0e;
+        }
+
+        label {
+            font-size: 1.5em;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .formgroup, .formgroup-active, .formgroup-error {
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: 10.5%;
+            transition: background-image 0.7s;
+            width: 566px;
+            padding-top: 2px;
+        }
+
+        .formgroup {
+            background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif');
+        }
+
+        .formgroup-active {
+            background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+        }
+
+        .formgroup-error {
+            background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+            color: red;
+        }
+
+        footer {
+            background-color: #333;
+            color: #F90;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact us</h1>
+    </header>
+
+    <div id="form">
+        <div class="fish" id="fish"></div>
+        <div class="fish" id="fish2"></div>
+
+        <form id="waterform" method="post">
+            <div class="formgroup" id="name-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="formgroup" id="email-form">
+                <label for="email">Your e-mail</label>
+                <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="formgroup" id="message-form">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <input type="submit" value="Send your message!" />
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Etudier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('input[type="text"], input[type="email"], textarea').focus(function(){
+                var background = $(this).attr('id');
+                $('#' + background + '-form').addClass('formgroup-active');
+                $('#' + background + '-form').removeClass('formgroup-error');
+            });
+            $('input[type="text"], input[type="email"], textarea').blur(function(){
+                var background = $(this).attr('id');
+                $('#' + background + '-form').removeClass('formgroup-active');
+            });
+
+            function errorfield(field){
+                $(field).addClass('formgroup-error');
+                console.log(field);    
+            }
+
+            $("#waterform").submit(function() {
+                var stopsubmit = false;
+
+                if($('#name').val() == "") {
+                    errorfield('#name-form');
+                    stopsubmit=true;
+                }
+                if($('#email').val() == "") {
+                    errorfield('#email-form');
+                    stopsubmit=true;
+                }
+                if(stopsubmit) return false;
+            });
+        });
+    </script>
+</body>
+</html>

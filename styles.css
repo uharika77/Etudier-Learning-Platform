@@ -1,0 +1,94 @@
+/* styles.css */
+
+body {
+    font-family:garamond;
+    text-align: justify;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+p {
+    color: #F90;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 50px 0;
+}
+
+.about-intro, .mission, .team, .values {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values ul li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
