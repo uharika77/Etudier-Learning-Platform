@@ -30,6 +30,7 @@ Etudier is a comprehensive educational platform designed to ignite curiosity and
 To run this project locally, you'll need:
 
 i. A web browser (Chrome, Firefox, etc.)
+
 ii. A code editor (VS Code, Sublime Text, etc.)
 
 ## Installation
