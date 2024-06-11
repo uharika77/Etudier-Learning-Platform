@@ -89,8 +89,8 @@ We welcome contributions to improve Etudier! If you have any suggestions or impr
 
 Feel free to reach out via the Contact Us page on the website, or connect with us on LinkedIn.
 
-## Live Demo:
+## Live Demo
 
-[](https://uharika77.github.io/Etudier-Learning-Platform/)
+Experience the interactive Etudier learning platform [here](https://uharika77.github.io/Etudier-Learning-Platform/)
 
 
