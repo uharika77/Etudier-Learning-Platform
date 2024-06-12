@@ -19,9 +19,9 @@ Etudier is a comprehensive educational platform designed to ignite curiosity and
 - courses.html: A listing of available courses.
 - contact.html: Contact form for users to get in touch.
 - login.html: Login page for user authentication.
-- css/reset.css: CSS file to reset default browser styles.
-- css/main.css: The main stylesheet for the website.
-- img/: Directory containing images used in the project.
+- reset.css: CSS file to reset default browser styles.
+- main.css: The main stylesheet for the website.
+- img/:Directory containing images used in the project.
   
 ## Getting Started
 
