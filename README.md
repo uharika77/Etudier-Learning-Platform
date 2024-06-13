@@ -35,15 +35,15 @@ ii. A code editor (VS Code, Sublime Text, etc.)
 
 ## Installation
 
-1.Clone the repository:
+**1.Clone the repository:**
 
 git clone https://github.com/uharika77/Etudier-Learning-Platform.git
 
-2.Navigate to the project directory:
+**2.Navigate to the project directory:**
 
 cd Etudier-Learning-Platform
 
-3.Open the index.html file in your web browser:
+**3.Open the index.html file in your web browser:**
 
 open index.html
 
@@ -86,8 +86,8 @@ We welcome contributions to improve Etudier! If you have any suggestions or impr
 
 ## Acknowledgements
 
-- Ionicons: For the social media icons.
-- Google Fonts: For the beautiful fonts used in the project.
+- **Ionicons**: For the social media icons.
+- **Google Fonts**: For the beautiful fonts used in the project.
   
 **Contact**
 
