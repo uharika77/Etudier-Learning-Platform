@@ -37,15 +37,15 @@ ii. A code editor (VS Code, Sublime Text, etc.)
 
 **1.Clone the repository:**
 
- git clone https://github.com/uharika77/Etudier-Learning-Platform.git
+  git clone https://github.com/uharika77/Etudier-Learning-Platform.git
 
 **2.Navigate to the project directory:**
 
- cd Etudier-Learning-Platform
+  cd Etudier-Learning-Platform
 
 **3.Open the index.html file in your web browser:**
 
- open index.html
+  open index.html
 
 ## Usage
 
