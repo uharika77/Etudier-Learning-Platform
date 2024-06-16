@@ -35,15 +35,15 @@ ii. A code editor (VS Code, Sublime Text, etc.)
 
 ## Installation
 
-**1.Clone the repository:**
+**1. Clone the repository:**
 
   git clone https://github.com/uharika77/Etudier-Learning-Platform.git
 
-**2.Navigate to the project directory:**
+**2. Navigate to the project directory:**
 
   cd Etudier-Learning-Platform
 
-**3.Open the index.html file in your web browser:**
+**3. Open the index.html file in your web browser:**
 
   open index.html
 
@@ -74,15 +74,15 @@ Use the contact form to get in touch with us for any queries or support.
 
 We welcome contributions to improve Etudier! If you have any suggestions or improvements, please follow these steps:
 
-1.Fork the repository.
+1. Fork the repository.
 
-2.Create a new branch: git checkout -b feature-branch-name
+2. Create a new branch: git checkout -b feature-branch-name
 
-3.Make your changes and commit them: git commit -m 'Add some feature'
+3. Make your changes and commit them: git commit -m 'Add some feature'
 
-4.Push to the branch: git push origin feature-branch-name
+4. Push to the branch: git push origin feature-branch-name
 
-5.Submit a pull request.
+5. Submit a pull request.
 
 ## Acknowledgements
 
